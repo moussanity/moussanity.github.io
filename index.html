@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moussanity — Exploring Earth, Mind, and Beyond</title>
+  <meta name="description" content="Join George Moussa as he explores Earth, Mind, and Beyond — through motion, meaning, and Moussanity. Cycling, sailing, piloting, roadtripping, science, and spirituality converge in a journey of discovery." />
+
+  <!-- Google site verification placeholder -->
+  <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" />
+
+  <!-- Open Graph & Twitter Cards -->
+  <meta property="og:title" content="Moussanity — Exploring Earth, Mind, and Beyond" />
+  <meta property="og:description" content="Adventure, reflection, and wonder: exploring motion, meaning, and Moussanity with George Moussa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.moussanity.com/" />
+  <meta property="og:image" content="https://www.moussanity.com/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Moussanity — Exploring Earth, Mind, and Beyond" />
+  <meta name="twitter:description" content="Adventure, reflection, and wonder: exploring motion, meaning, and Moussanity with George Moussa." />
+  <meta name="twitter:image" content="https://www.moussanity.com/assets/og-image.jpg" />
+
+  <link rel="icon" href="assets/favicon.ico" />
+
+  <style>
+    :root {
+      --blue:#0C1A33;
+      --gold:#D4A14A;
+      --silver:#BFC9D9;
+    }
+    * { box-sizing:border-box; }
+    html,body {
+      margin:0; padding:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:var(--blue);
+      color:var(--silver);
+    }
+    a { color:var(--gold); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .wrap { max-width:1120px; margin:0 auto; padding:24px; }
+    header {
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding:12px 0;
+    }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .brand img { width:48px; height:48px; border-radius:10px; box-shadow:0 6px 16px rgba(0,0,0,.35); }
+    .brand h1 { font-size:20px; margin:0; color:#fff; letter-spacing:.5px; }
+    nav a { margin-left:18px; font-weight:600; }
+
+    .hero {
+      position:relative; overflow:hidden; border:1px solid rgba(255,255,255,.05);
+      border-radius:18px;
+      background:radial-gradient(1200px 500px at 20% -10%, rgba(212,161,74,.25), transparent 60%),
+                 radial-gradient(1000px 500px at 120% 20%, rgba(191,201,217,.18), transparent 60%),
+                 linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0));
+      padding:56px 24px;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.05), 0 20px 60px rgba(0,0,0,.35);
+    }
+    .hero-grid {
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:24px;
+      align-items:center;
+    }
+    .kicker {
+      color:var(--gold);
+      font-weight:700;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      font-size:12px;
+    }
+    .title {
+      font-size:44px; line-height:1.08;
+      margin:.25em 0 .3em; color:#fff;
+    }
+    .subtitle {
+      font-size:18px; opacity:.92; max-width:58ch;
+    }
+    .cta { margin-top:22px; display:flex; flex-wrap:wrap; gap:12px; }
+    .btn {
+      display:inline-flex; align-items:center; gap:10px;
+      padding:12px 16px; border-radius:12px; font-weight:700;
+      border:2px solid transparent; transition:.2s ease;
+    }
+    .btn.primary { background:var(--gold); color:#1a1205; }
+    .btn.primary:hover { filter:brightness(1.05); }
+    .btn.ghost { border-color:rgba(212,161,74,.55); color:var(--gold); }
+    .btn.ghost:hover { background:rgba(212,161,74,.08); }
+    .hero-card {
+      background:rgba(4,10,22,.55);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:16px; padding:16px;
+    }
+    .hero-card img {
+      width:100%; border-radius:12px; border:1px solid rgba(255,255,255,.08);
+    }
+
+    .section { padding:56px 0; }
+    .journey-group { margin-bottom:40px; }
+    .journey-group h3 { color:var(--gold); margin-bottom:8px; }
+    .journey-group p { margin:0 0 6px; }
+
+    .video { aspect-ratio:16/9; width:100%; border-radius:16px; overflow:hidden;
+      border:1px solid rgba(255,255,255,.08); box-shadow:0 10px 30px rgba(0,0,0,.45);
+    }
+    iframe { width:100%; height:100%; border:0; }
+
+    .newsletter {
+      display:grid; grid-template-columns:3fr 2fr; gap:16px; align-items:center;
+      background:linear-gradient(135deg, rgba(212,161,74,.13), rgba(12,26,51,.6));
+      border:1px solid rgba(212,161,74,.28); border-radius:16px; padding:18px;
+    }
+    .newsletter input {
+      width:100%; padding:12px 14px; border-radius:10px;
+      border:1px solid rgba(255,255,255,.2); background:rgba(0,0,0,.25); color:#fff;
+    }
+    .newsletter button {
+      padding:12px 16px; border-radius:10px; border:0; background:var(--gold);
+      font-weight:800;
+    }
+
+    footer {
+      padding:40px 0 24px; border-top:1px solid rgba(255,255,255,.08); margin-top:48px;
+    }
+    .footgrid { display:grid; grid-template-columns:1fr auto; gap:12px; align-items:center; }
+    .social a { margin-left:14px; }
+
+    @media (max-width:900px) {
+      .hero-grid { grid-template-columns:1fr; }
+      .newsletter { grid-template-columns:1fr; }
+      nav { display:none; }
+    }
+    @media (max-width:560px) {
+      .title { font-size:34px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="assets/logo.png" alt="Moussanity logo" />
+        <h1>MOUSSANITY</h1>
+      </div>
+      <nav>
+        <a href="#journeys">Journeys</a>
+        <a href="#episodes">Episodes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div>
+          <div class="kicker">The Art of Staying Alive</div>
+          <h2 class="title">Exploring Earth, Mind, and Beyond</h2>
+          <p class="subtitle">
+            A life in motion led by <strong>George Moussa</strong>. Moussanity is the intersection of adventure, philosophy, and spiritual curiosity — exploring Earth, Mind, and Beyond through motion, meaning, and wonder.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="https://www.youtube.com/@Moussanity" target="_blank">▶ Watch on YouTube</a>
+            <a class="btn ghost" href="#newsletter">✉ Subscribe</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/banner.png" alt="Moussanity banner" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="journeys">
+      <h2 style="color:#fff;margin-bottom:20px;">The Three Journeys</h2>
+
+      <div class="journey-group">
+        <h3>🌍 Journeys Through the World</h3>
+        <p>🚗 Roadtripping · 🚴 Cycling · ✈️ Piloting · ⛵ Sailing</p>
+      </div>
+
+      <div class="journey-group">
+        <h3>💡 Journeys Through the Mind</h3>
+        <p>🧠 Science · 🔭 Innovation · 💭 Philosophy</p>
+      </div>
+
+      <div class="journey-group">
+        <h3>✨ Journeys Through the Soul</h3>
+        <p>🌅 Spirituality · 💫 Wonder · ❤️ Connection</p>
+      </div>
+    </section>
+
+    <section class="section" id="episodes">
+      <h2 style="color:#fff;margin:0 0 12px;">Featured Trailer</h2>
+      <p style="margin-top:0;opacity:.9;">Start here for the heartbeat of Moussanity.</p>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0" title="Moussanity Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="section" id="newsletter">
+      <div class="newsletter">
+        <div>
+          <h2 style="margin:0 0 6px;color:#fff;">Be first to new adventures</h2>
+          <p style="margin:0;opacity:.9;">No spam — just occasional highlights, behind-the-scenes notes, and upcoming journeys.</p>
+        </div>
+        <form action="mailto:George@Moussanity.com" method="post" enctype="text/plain">
+          <div style="display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;">
+            <input type="email" name="email" placeholder="you@example.com" required />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="footgrid">
+        <div>© <span id="year"></span> Moussanity. All rights reserved.</div>
+        <div class="social">
+          <a href="https://www.youtube.com/@Moussanity" target="_blank">YouTube</a>
+          <a href="https://instagram.com/moussanitylife" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@MoussanityTV" target="_blank">TikTok</a>
+          <a href="https://twitter.com/Moussanity" target="_blank">X</a>
+          <a href="mailto:George@Moussanity.com">Email</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
